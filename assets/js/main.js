@@ -123,7 +123,11 @@ console.log(pessoa)*/
 
     //Qual a distância em KM?Distância em KM = 3030 km é equivalente a 36585 passos.
     
+    /*(function (){
+        'use strict'
         const VALOR_UM_PASSO = 0.82;
+
+        var variavelNomain = true;
                 
         function converterPassosEmKM (){
             var KmInformado = prompt("Qual a distancia dem KM ?");
@@ -133,6 +137,10 @@ console.log(pessoa)*/
             console.log(KmInformado + "Km é equivalente a " + quantidadedePassos, "passos");
         
         }
+
+    }
+       
+    
 
         //2 -Na construção civil, sabe-se que 8 pedreiros levam 72 horas para construir um muro. 
         //Faça um programa que leia a quantidade de pedreiros disponíveis e informe quantas horas eles demorarão para terminar o muro.
@@ -192,7 +200,7 @@ console.log(pessoa)*/
             else {
                 console.log("Sua média foi",resultadoMedia,"você está reprovado");
             }
-        }
+        })()
 
           //4 -Crie um programa que leia o nome de uma pessoa e seu sexo (m para masculino e f para feminino). Ao final, o programa deve imprimir a mensagem
          //“Bom dia senhor” ou “Bom dia senhora” seguida do nome.
@@ -223,5 +231,45 @@ console.log(pessoa)*/
             }
 
 
-         }
+         }*/
 
+         //Com função presa
+
+         (function () {
+            'use strict';
+            //MANIPULAR DOM (Document Object Model)
+            var idade = 13;
+            var h1Principal = document.getElementById("h1Principal");
+            var h1Secundario = document.getElementById("h1Secundario");
+            if(idade >= 18){
+                h1Principal.innerHTML = "<b>Bem-vindo</b>, você tem " + idade + " anos,é maior de idade";
+                h1Principal.className ="text-verde";
+            } else{
+                h1Secundario.innerHTML = "<b>Opa</b>, você não pode entrar, você tem " + idade + " anos, é menor de idade";
+                h1Secundario.className ="text-vermelho";
+            }
+        
+        
+            
+            
+        })();
+
+        //Com função Solta
+        function idade () {
+            'use strict';
+            //MANIPULAR DOM (Document Object Model)
+            var idade = 13;
+            var h1Principal = document.getElementById("h1Principal");
+            var h1Secundario = document.getElementById("h1Secundario");
+            if(idade >= 18){
+                h1Principal.innerHTML = "<b>Bem-vindo</b>, você tem " + idade + " anos,é maior de idade";
+                h1Principal.className ="text-verde";
+            } else{
+                h1Secundario.innerHTML = "<b>Opa</b>, você não pode entrar, você tem " + idade + " anos, é menor de idade";
+                h1Secundario.className ="text-vermelho";
+            }
+        
+        
+            
+            
+        }
